@@ -10,12 +10,13 @@ function insertionSort(arr) {
        let prev = i - 1
 
        while(arr[current ] < arr[prev] && prev >= 0) {
-        arr[prev + 1 ] = arr[prev]
+        arr[prev + 1 ] = arr[prev]  //shifting the checked greater element to +1 index 
 
-        prev --
+        prev --    // shifting the prev to previous index to check and compare  the previous -- element in the sorted array with curr
 
        }
-       arr[prev + 1 ] =  current
+       arr[prev + 1 ] =  current // at this position the arr[prev ] will be greater than arr[current]
+                            //  so we will place the current at prev + 1 index
 
     }
     console.log(arr)
