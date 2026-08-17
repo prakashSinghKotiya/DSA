@@ -24,16 +24,16 @@
  * @return {number[]}
  */
 var sortArray = function(nums) {
-    if(nums.length <= 1){
+    if(nums.length <= 1){ // base condition retunign the single element
         return nums
     }
     let mid = Math.floor(nums.length/2)
-    let left = sortArray(nums.slice(0,mid))
+    let left = sortArray(nums.slice(0,mid))  // reccrusive call until we found the base condition
     let right =sortArray(nums.slice(mid))  // this will got to mid to arr.length
     return mergearray(left , right)
 };
 
-function mergearray (left , right ){
+function mergearray (left , right ){  // this is  the function responsible for sorted merging
     const arr = []
     let l = 0 
     let r = 0
