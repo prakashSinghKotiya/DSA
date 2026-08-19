@@ -73,3 +73,28 @@ Linkedlist.prototype.addatIndex = function (index ,val ){
    
     
 }
+
+
+
+Linkedlist.prototype.get = function (index  ){    // to  get the value at index
+   
+
+    if(index == 0 || inde > this.size){ // checking corner cases
+      
+        return -1
+
+    }
+    else{
+
+    let current = this.head  // head is the first node ie  the index 0 automatically 
+    for(i = 0 ; i < index ; i++){
+        current = current.next 
+             }  
+
+        return current.value // this will return the value, if we want to return the node we would had just wriiten current
+
+        
+    }
+   
+    
+}
