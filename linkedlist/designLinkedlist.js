@@ -48,6 +48,7 @@ Linkedlist.prototype.addatTail = function (val ){
 
 Linkedlist.prototype.addatIndex = function (index ,val ){   
     const newIndex  = new node(val)
+     if(index <=0 || index >= this.size) return
 
     if(index == 0){ // checking corner cases
         this.addatTail(val)
@@ -92,6 +93,36 @@ Linkedlist.prototype.get = function (index  ){    // to  get the value at index
              }  
 
         return current.value // this will return the value, if we want to return the node we would had just wriiten current
+
+        
+    }
+   
+    
+}
+
+
+
+Linkedlist.prototype.delete = function (index ,val ){   
+    const newIndex  = new node(val)
+     if(index <=0 || index >= this.size) return
+
+    if(index == 0){ // checking corner cases
+        this.addatTail(val)
+        return
+
+    }else if( index == this.size){ // checking corner cases
+        this.addatTail(val)
+        return
+    } // means the likedlist is empty
+    else{
+
+    let current = this.head  // head is the first node ie  the index 0 automatically 
+    while(current < index - 1){
+        cuurent = current.next 
+             }  
+
+         current.next = current.next.next
+         this.size--
 
         
     }
