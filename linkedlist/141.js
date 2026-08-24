@@ -44,3 +44,6 @@ var hasCycle = function(head) {
     return true 
     
 };
+
+
+// now here the space complexity is 0(1) and 0(n ) timecomplexity
