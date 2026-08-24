@@ -19,6 +19,28 @@ var hasCycle = function(head) {
 
     }
     return false 
+};
+// this  taking o(n) tc and o(n) sc 
+
+
+//BETTER APPROACH 
+
+//SLOW AND FAST POINTER APPROACH ( FLOYD'S CYCLE DETECTION ALGORITHM)
+var hasCycle = function(head) {
     
+    if(!head ) return false 
+    let slow = head
+    let fast = head.next
+
+    while(fast != slow){   // IF THEY MEET THEN THERE IS A CYCLE
+
+        if(fast === null || fast.next === null ){ // if  null is there then there is no cycle
+            return false 
+        }
+        slow = slow.next    // slow pointer is moving 1 step at a time
+        fast = fast.next.next   //fast pointer is moving 2 steps at a time
+        
+    }
+    return true 
     
 };
