@@ -118,7 +118,7 @@ Linkedlist.prototype.delete = function (index ,val ){
 
     let current = this.head  // head is the first node ie  the index 0 automatically 
     while(current < index - 1){
-        cuurent = current.next 
+        current = current.next 
              }  
 
          current.next = current.next.next
