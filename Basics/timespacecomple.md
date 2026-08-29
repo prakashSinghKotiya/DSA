@@ -17,3 +17,7 @@ timecomplexity : Time complexity measures how efficient an algorithm is as the i
 5- o(n ^3 )- tripple nested loop 
 
 6- o(2n)- two differeent independent linear loop  
+
+
+** when we run loop inside loop it get multiplied and the time c become n sq , n cube etc 
+** but when we run loop independently it gets add and the time c becomome n + n + n = 3n or 2n or 4 n which is ~ to 0(N)
