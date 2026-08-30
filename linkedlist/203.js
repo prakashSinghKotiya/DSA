@@ -1,5 +1,5 @@
 //Given the head of a linked list and an integer val, remove all the nodes of the linked list
-//  that has Node.val == val, and return the new head.
+//  that has Node.val == val, and return the new head.eg [545785] val = 5 
 
 // here we creating a new node and linking it with the head of the linkedlist and that using a prev pointer 
 // we are llooping  andd if  value  match we delted the node by unlinking the node 
