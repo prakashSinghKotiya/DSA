@@ -17,6 +17,11 @@
 // Explanation: The arr has been split into subarrays with 3 elements. However, only two elements are left for the 2nd subarray.
 
 
+
+//logic : main logic is this i += size this will loop acc to size if size is 3 it will loop 0 to 3 , 3 to 6 ans so on 
+// then we simply pushing the sliced array that became a subarray and get pushed to the main array
+
+
 var chunk = function(arr, size) {
     let a = []
     for(let i = 0 ; i<arr.length ; i += size){
