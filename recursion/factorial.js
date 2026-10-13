@@ -1,6 +1,8 @@
 
 //find thee factorial using recursion factorial is !5 = 5*4*3*2*1 = 120
 
+//this is creating one branch of tree 
+
 function multiply (n){
     if(n == 0 ) return 1
 

@@ -18,7 +18,7 @@
 
 
 
-//logic : main logic is this i += size this will loop acc to size if size is 3 it will loop 0 to 3 , 3 to 6 ans so on 
+//logic : main logic is this (i+= size) this will loop acc to size if size is 3 it will loop 0 to 3 , 3 to 6 ans so on 
 // then we simply pushing the sliced array that became a subarray and get pushed to the main array
 
 
